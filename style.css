@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #FCBACB;
+    text-align: center;
+    font-family: Roboto;
+}
+#image img{
+    border: 2px solid white;
+    border-radius: 2000px;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    background-color: #FCBACB;
+}
+#image{
+    transform: translateY(80px);
+}
+#container{ 
+    justify-items: center;
+    background-color: white;
+    border-radius: 7px;
+    padding-top: 85px;
+    width: 600px;
+    height: 535px;
+    margin: auto;
+}
+#container form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+#container form .text_areas{
+    border: 1px solid rgb(161, 161, 161);
+    font-size: 20px;
+    padding-left: 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    width: 480px;
+    height: 50px;
+}
+#container form .pass_areas{
+    border: 1px solid rgb(161, 161, 161);
+    font-size: 20px;
+    padding-left: 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    width: 480px;
+    height: 50px;
+}
+.text_areas::placeholder{
+    font-size: 15px;
+}
+.pass_areas::placeholder{
+    font: bold;
+    font-size: 30px;
+}
+#container #btn{
+    background-color: #FCBACB;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    width: 500px;
+    height: 50px;
+    font-size: 20px;
+}
+#container #btn:hover{
+    background-color: hsl(345, 92%, 90%);
+    cursor: pointer;
+}
+footer{
+    padding-top: 40px;
+}
+footer a{
+    color: #ff7c9d;
+    font-style: italic;
+    text-decoration: none;
+}
+@media(max-width: 768px) {
+    #container{ 
+        justify-items: center;
+        background-color: white;
+        border-radius: 7px;
+        padding-top: 50px;
+        width: 375px;
+        height: 435px;
+        margin: auto;
+    }
+    #image{
+        transform: translateY(45px);
+    }
+    #container form .text_areas{
+        border: 1px solid rgb(161, 161, 161);
+        font-size: 20px;
+        padding-left: 20px;
+        border-radius: 5px;
+        margin-top: 30px;
+        width: 275px;
+        height: 50px;
+    }
+    #container form .pass_areas{
+        border: 1px solid rgb(161, 161, 161);
+        font-size: 20px;
+        padding-left: 20px;
+        border-radius: 5px;
+        margin-top: 30px;
+        width: 275px;
+        height: 50px;
+    }
+    #container #btn{
+        background-color: #FCBACB;
+        border: none;
+        border-radius: 5px;
+        margin-top: 30px;
+        width: 300px;
+        height: 50px;
+        font-size: 20px;
+    }
+    footer{
+        padding-top: 20px;
+        font-size: 15px;
+    }
+}
